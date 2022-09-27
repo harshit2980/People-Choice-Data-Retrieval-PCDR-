@@ -74,8 +74,7 @@ public class FootFallServiceLayer {
 
 
 
-    /*ye cacheName kiya hota h,aur key kiya hoti h har function m cacheName
-     aur key name same h toh koi problem toh nahi hogi*/
+
     @Cacheable(cacheNames = "footFallBrand", key = "#id")
     public List<String> getFootFallByBrandId(int id) {
         LOG.info("fetching Person Name from FootFall db");
